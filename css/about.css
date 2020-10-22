@@ -1,0 +1,65 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.container {
+  display: grid;
+  height: 90vh;
+  grid-template-columns: 10% 10% repeat(3, 7fr);
+}
+.content {
+  grid-column: 4/5;
+  padding-top: 50%;
+  color: white;
+}
+body {
+  background: black;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+img {
+  height: 70vh;
+  grid-column: 3/4;
+  grid-row-start: auto;
+  padding-top: 50px;
+}
+.name {
+  font-size: 50px;
+  font-family: "Alex Brush", cursive;
+  font-weight: lighter;
+}
+.quote {
+  font-size: 20px;
+}
+.about {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+@media screen and (max-width: 640px) {
+  body {
+    width: fit-content;
+    overflow: scroll;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  img {
+    padding: 10%;
+    border: oldlace;
+  }
+  .content {
+    position: relative;
+    padding: 15px;
+  }
+  .name {
+    font-size: 50px;
+  }
+  .about {
+    font-size: 20px;
+    font-weight: lighter;
+  }
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/gallery.css" />
+    <link rel="stylesheet" href="./css/1sty.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Peddana&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+
+      const colors = [
+        '#2196f3', '#e91e63', '#ffeb3b', '#74ff1d'
+
+      ];
+
+      function createsquare() {
+        const section = document.querySelector('section');
+        const square = document.createElement('span');
+
+        var size = Math.random() * 50;
+
+        square.style.width = 20 + size + 'px';
+        square.style.height = 20 + size + 'px';
+
+        square.style.top = Math.random() * innerHeight + 'px';
+        square.style.left = Math.random() * innerWidth + 'px';
+
+        const bg = colors[Math.floor(Math.random() ** colors.length)];
+        square.style.background = bg;
+
+        section.appendChild(square);
+
+        setTimeout(() => {
+          square.remove()
+        }, 5000);
+      }
+
+      setInterval(createsquare, 150);
+    </script>
+    <title>Gallery</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">
+        <h4>Shutterbug</h4>
+      </div>
+      <ul class="nav-links">
+        <li><a href="./index.html">HOME</a></li>
+        
+        <li><a href="./about.html">ABOUT</a></li>
+      </ul>
+    </nav>
+    
+  
+    <div class="container">
+      <div class="img">
+        <img src="../image/thumb/1.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="../image/thumb/2.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="../image/thumb/4.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="../image/thumb/5.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="../image/thumb/6.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="../image/thumb/7.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="../image/thumb/8.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="../image/thumb/9.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="../image/thumb/10.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="../image/thumb/11.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="../image/thumb/13.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="../image/thumb/de.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="../image/thumb/DSC_0004.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="../image/thumb/DSC_0010.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="../image/thumb/DSC_0040.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="../image/thumb/DSC_0048.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="../image/thumb/DSC_0038.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="../image/thumb/DSC_0109.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="../image/thumb/DSC_0007-1.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="../image/thumb/DSC_8049.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="../image/thumb/DSC_9851.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="../image/thumb/DSC_9929.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="../image/thumb/DSC_9998.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="../image/thumb/DSC07214.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="../image/thumb/gaana.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="../image/thumb/IMG_3766.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="../image/thumb/IMG_20200301_130818_120.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="../image/thumb/n4.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="../image/thumb/DSC_0109.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="../image/thumb/DSC08701.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="../image/thumb/pop1.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="../image/thumb/pop2.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="../image/thumb/pop3.jpg" alt="" />
+      </div>
+      <div class="img">
+        <img src="../image/thumb/IMG_20200302_014149_369.jpd" alt="" />
+      </div>
+    </div>
+    
+   
+    
+    <footer>copyright &copy; 2020 by Prit Pradhan. All rights reserved</footer>
+  </body>
+</html>
